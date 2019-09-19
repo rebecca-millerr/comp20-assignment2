@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- footer code inspired by https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ and https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551-->
+
     <title>Home Page</title>
     <link href="./style.css" type="text/css" rel="stylesheet">
+    <style>
+        div h2.call-to-action {
+            padding-left: 850px;
+            padding-top: 250px;
+            margin-top: 0px;
+            float: bottom;
+            width: 150px;
+            text-align: right;
+        }
+
+        div h4.call-to-action {
+            padding-left: 700px;
+            padding-top: 10px;
+            width: 300px;
+            text-align: right;
+        }
+    </style>
   </head>
   <body>
-    <header>
-        <a href="#"><h1 class = "header-text">Makeup My Life</h1></a>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="featured-img">
-   	    <h2 class="call-to-action">Say Goodbye to YouTube Tutorials</h2>
-        <br>
-        <h4 class="call-to-action">Makeup My Life provides you with a makeup 
-            specialist to talk, FaceTime, call, Skype, you name it, and we'll 
-            provide personalized tutorials, tips, and tricks, whenever YOU 
-            want!</h4>
+    <div class="page-container">
+        <div class="content-wrapper">
+            <header>
+                <a href="index.html"><h1 class = "header-text">Makeup My Life</h1></a>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="featured-img" style="background-image: url(applying-makeup.jpg);">
+   	            <h2 class="call-to-action">Say Goodbye to YouTube Tutorials</h2>
+                <h4 class="call-to-action">Makeup My Life provides you with a 
+                    makeup specialist to talk, FaceTime, call, Skype, you name it, 
+                    and we'll provide personalized tutorials, tips, and tricks, 
+                    whenever YOU want!</h4>
+            </div>
+            <div class="extra-padding" style="padding-top: 40px">
+                <h2 class="center translucent">Our Mission</h2>
+                <p class="center translucent">We know that makeup can be expensive, not to mention it's time-consuming and difficult to apply. This is for the lazy person in all of us, who just wants to learn how to do it <em>right</em> once, rather than doing it wrong a hundred times. This one's for you!</p>
+            </div>
+            <div class="left-block" style="background-color: #778aba;">
+                <h2 class="center" style="padding: 20px;">Want to learn more about our services?</h2>
+                <div class="button center" style="padding: 20px;"><a href="services.html">Click Here</a></div>
+            </div>
+            <div class="right-block" style="background-color: #eda4ae;">
+                <h2 class="center" style="padding: 20px;">Reach out to us!</h2>
+                <div class="button center" style="padding: 20px;"><a href="contact.html">Click Here</a></div>
+            </div>
+            <footer><p>Makeup My Life - TM</p></footer>
+        </div>
     </div>
-    <div class="extra-padding" style="padding-top: 40px">
-        <h2 class="center translucent">Our Mission</h2>
-        <p class="center translucent">We know that makeup can be expensive, not to mention it's time-consuming and difficult to apply. This is for the lazy person in all of us, who just wants to learn how to do it <em>right</em> once, rather than doing it wrong a hundred times. This one's for you!</p>
-    </div>
-    <div class="left-block">
-        <h2 class="center" style="padding: 20px;">Want to learn more about our services?</h2>
-        <div class="button center" style="padding: 20px;"><a href="#">Click Here</a></div>
-    </div>
-    <div class="right-block">
-        <h2 class="center" style="padding: 20px;">Reach out to us!</h2>
-        <div class="button center" style="padding: 20px;"><a href="#">Click Here</a></div>
-    </div>
-    <footer></footer>
   </body>
 </html>
