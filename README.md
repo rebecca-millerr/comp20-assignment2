@@ -22,3 +22,8 @@ More information:
 - index.html is the home page that directs to the others.
 - services.html provides an overview of services.
 - contact.html has contact information.
+- every .png file is an icon image used on the services page
+- every .jpg file is an image used as a featured banner image
+- style.css is the main (only) external stylesheet
+- there is also a smaller internal stylesheet used on each page
+- finally, there is various inline styling used where necessary
